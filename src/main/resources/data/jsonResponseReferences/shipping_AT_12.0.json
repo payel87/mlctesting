@@ -1,0 +1,12 @@
+{
+  "postage_result": {
+    "service": "Standard",
+    "total_cost": "158.10",
+    "costs": {
+      "cost": {
+        "item": "Standard",
+        "cost": "158.10"
+      }
+    }
+  }
+}

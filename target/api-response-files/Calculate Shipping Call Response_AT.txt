@@ -1,0 +1,24 @@
+Content-Type=application/json;charset=UTF-8
+Content-Length=99
+Connection=keep-alive
+Access-Control-Allow-Headers=
+Access-Control-Allow-Origin=
+Access-Control-Max-Age=1200
+Content-Encoding=gzip
+Date=Thu, 22 Jul 2021 00:45:39 GMT
+Server=nginx
+X-Cache=Miss from cloudfront
+Via=1.1 f59bca6f088aed7c4e862f051be29532.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop=SYD1-C1
+X-Amz-Cf-Id=RLgjD7MZY0BKAOJpb8-VNIR-HHeB1EWKFpla_n5Wv2vUgCa08fAOhg==/n{
+    "postage_result": {
+        "service": "Standard",
+        "total_cost": "158.10",
+        "costs": {
+            "cost": {
+                "item": "Standard",
+                "cost": "158.10"
+            }
+        }
+    }
+}

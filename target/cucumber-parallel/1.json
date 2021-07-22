@@ -1,0 +1,534 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 361697,
+              "status": "passed"
+            },
+            "match": {
+              "location": "RunContext.initApi(Scenario)"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Check Shipping cost for 3 countries",
+        "description": "",
+        "id": "validate-session-call;check-shipping-cost-for-3-countries;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 16969,
+              "status": "passed"
+            },
+            "match": {
+              "location": "RunContext.tearDownApi(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 466156348,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I read the base url",
+            "match": {
+              "location": "AuspostApiSteps.iReadTheBaseUrl()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2023766315,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I make a get call for shipping cost for NZ , 1.0 and INT_PARCEL_STD_OWN_PACKAGING",
+            "match": {
+              "arguments": [
+                {
+                  "val": "NZ",
+                  "offset": 40
+                },
+                {
+                  "val": "1.0",
+                  "offset": 45
+                },
+                {
+                  "val": "INT_PARCEL_STD_OWN_PACKAGING",
+                  "offset": 53
+                }
+              ],
+              "location": "AuspostApiSteps.iMakeAGetCallForShippingCostForCountry_codeWeightAndService_code(String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 25100618,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The response status is \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 24
+                }
+              ],
+              "location": "AuspostApiSteps.theResponseStatusIs(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 42317111,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I save the response in \"Calculate Shipping Call Response_NZ\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Calculate Shipping Call Response_NZ",
+                  "offset": 24
+                }
+              ],
+              "location": "AuspostApiSteps.iSaveTheResponseIn(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 71253853,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The actual response values should match with \"shipping_NZ_1.0\" reference json for \"$.postage_result.costs.cost.item\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "shipping_NZ_1.0",
+                  "offset": 46
+                },
+                {
+                  "val": "$.postage_result.costs.cost.item",
+                  "offset": 83
+                }
+              ],
+              "location": "AuspostApiSteps.actualResponseValuesShouldMatchWithReferenceJsonForBelowElements(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 907637,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The actual response values should match with \"shipping_NZ_1.0\" reference json for \"$.postage_result.costs.cost.cost\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "shipping_NZ_1.0",
+                  "offset": 46
+                },
+                {
+                  "val": "$.postage_result.costs.cost.cost",
+                  "offset": 83
+                }
+              ],
+              "location": "AuspostApiSteps.actualResponseValuesShouldMatchWithReferenceJsonForBelowElements(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@api"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 27152,
+              "status": "passed"
+            },
+            "match": {
+              "location": "RunContext.initApi(Scenario)"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Check Shipping cost for 3 countries",
+        "description": "",
+        "id": "validate-session-call;check-shipping-cost-for-3-countries;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 10666,
+              "status": "passed"
+            },
+            "match": {
+              "location": "RunContext.tearDownApi(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1341576,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I read the base url",
+            "match": {
+              "location": "AuspostApiSteps.iReadTheBaseUrl()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 419886749,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I make a get call for shipping cost for IN , 10.0 and INT_PARCEL_STD_OWN_PACKAGING",
+            "match": {
+              "arguments": [
+                {
+                  "val": "IN",
+                  "offset": 40
+                },
+                {
+                  "val": "10.0",
+                  "offset": 45
+                },
+                {
+                  "val": "INT_PARCEL_STD_OWN_PACKAGING",
+                  "offset": 54
+                }
+              ],
+              "location": "AuspostApiSteps.iMakeAGetCallForShippingCostForCountry_codeWeightAndService_code(String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2272001,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The response status is \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 24
+                }
+              ],
+              "location": "AuspostApiSteps.theResponseStatusIs(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 14158067,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I save the response in \"Calculate Shipping Call Response_IN\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Calculate Shipping Call Response_IN",
+                  "offset": 24
+                }
+              ],
+              "location": "AuspostApiSteps.iSaveTheResponseIn(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 839273,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The actual response values should match with \"shipping_IN_10.0\" reference json for \"$.postage_result.costs.cost.item\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "shipping_IN_10.0",
+                  "offset": 46
+                },
+                {
+                  "val": "$.postage_result.costs.cost.item",
+                  "offset": 84
+                }
+              ],
+              "location": "AuspostApiSteps.actualResponseValuesShouldMatchWithReferenceJsonForBelowElements(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 900364,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The actual response values should match with \"shipping_IN_10.0\" reference json for \"$.postage_result.costs.cost.cost\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "shipping_IN_10.0",
+                  "offset": 46
+                },
+                {
+                  "val": "$.postage_result.costs.cost.cost",
+                  "offset": 84
+                }
+              ],
+              "location": "AuspostApiSteps.actualResponseValuesShouldMatchWithReferenceJsonForBelowElements(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@api"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 25697,
+              "status": "passed"
+            },
+            "match": {
+              "location": "RunContext.initApi(Scenario)"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Check Shipping cost for 3 countries",
+        "description": "",
+        "id": "validate-session-call;check-shipping-cost-for-3-countries;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 11151,
+              "status": "passed"
+            },
+            "match": {
+              "location": "RunContext.tearDownApi(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1472001,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I read the base url",
+            "match": {
+              "location": "AuspostApiSteps.iReadTheBaseUrl()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 385903702,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I make a get call for shipping cost for AT , 12.0 and INT_PARCEL_STD_OWN_PACKAGING",
+            "match": {
+              "arguments": [
+                {
+                  "val": "AT",
+                  "offset": 40
+                },
+                {
+                  "val": "12.0",
+                  "offset": 45
+                },
+                {
+                  "val": "INT_PARCEL_STD_OWN_PACKAGING",
+                  "offset": 54
+                }
+              ],
+              "location": "AuspostApiSteps.iMakeAGetCallForShippingCostForCountry_codeWeightAndService_code(String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1078304,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The response status is \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 24
+                }
+              ],
+              "location": "AuspostApiSteps.theResponseStatusIs(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11250915,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I save the response in \"Calculate Shipping Call Response_AT\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Calculate Shipping Call Response_AT",
+                  "offset": 24
+                }
+              ],
+              "location": "AuspostApiSteps.iSaveTheResponseIn(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 808242,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The actual response values should match with \"shipping_AT_12.0\" reference json for \"$.postage_result.costs.cost.item\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "shipping_AT_12.0",
+                  "offset": 46
+                },
+                {
+                  "val": "$.postage_result.costs.cost.item",
+                  "offset": 84
+                }
+              ],
+              "location": "AuspostApiSteps.actualResponseValuesShouldMatchWithReferenceJsonForBelowElements(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 783030,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The actual response values should match with \"shipping_AT_12.0\" reference json for \"$.postage_result.costs.cost.cost\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "shipping_AT_12.0",
+                  "offset": 46
+                },
+                {
+                  "val": "$.postage_result.costs.cost.cost",
+                  "offset": 84
+                }
+              ],
+              "location": "AuspostApiSteps.actualResponseValuesShouldMatchWithReferenceJsonForBelowElements(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@api"
+          }
+        ]
+      }
+    ],
+    "name": "Validate session call",
+    "description": "",
+    "id": "validate-session-call",
+    "keyword": "Feature",
+    "uri": "C:/mlctesting/src/test/java/Features/Auspost.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@api"
+      }
+    ]
+  }
+]

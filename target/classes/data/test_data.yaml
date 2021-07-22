@@ -1,0 +1,14 @@
+valid mlc url:
+  test: "https://www.mlcinsurance.com.au/"
+  preprod:
+  prod:
+
+valid ato url:
+  test: "https://www.ato.gov.au/Calculators-and-tools/Host/?anchor=STC&anchor=STC#STC/questions"
+  preprod:
+  prod:
+
+apiEndPointUrl:
+  test: "https://digitalapi.auspost.com.au"
+  preprod:
+  prod:
